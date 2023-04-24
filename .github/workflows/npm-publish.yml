@@ -34,7 +34,6 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
           # Defaults to the user or organization that owns the workflow file
-          scope: '@edwinbetanc0urt'
       - run: npm ci # if a package.lock exists
       - run: npm run stub --if-present
       - run: npm publish
